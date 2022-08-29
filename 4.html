@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario en HTML 5 - TECSUP</title>
+    </head>
+    
+    
+    <body>
+        
+        <h1>Nuevas caracteristicas de html 5- DISEÑO WEB</h1>
+        
+        <form id="form-order">
+
+            <p>
+                <label for="name">Nombre (Obligatorio)</label>
+
+                <input 
+                    type= "text" 
+                    name ="name"   
+                    id="name"
+                    placeholder="Juan León"
+                    autofocus
+                    autocomplete
+                    required
+                >
+            </p>
+
+            <p>
+                    <label for="password">Clave (Obligatorio)</label>
+    
+                    <input 
+                        type= "text" 
+                        name ="password"   
+                        id="password"
+                        placeholder="Ingresar Clave"
+                        pattern="[a-z]{3}[0-9]{4}"
+                        required>(La contraseña debe tener 3 letras y cuatro numeros en ese orden)
+                    
+            </p>
+            <p>
+                    <label for="telefono">Telefono (Obligatorio)</label>
+    
+                    <input 
+                        type= "text" 
+                        name ="telefono"   
+                        id="telefono"
+                        placeholder="9999999999"
+                    >
+            </p>
+            <p>
+                    <label for="email">Email (Obligatorio)</label>
+    
+                    <input 
+                        type= "text" 
+                        name ="email"   
+                        id="eamil"
+                        placeholder="ejempl@tecsup.edu.pe"
+                        
+                    >
+            </p>
+            
+            <p>
+                <label for="pagina">Pagina (Obligatorio)</label>
+                <input 
+                    type= "text" 
+                    name ="pagina"   
+                    id="pagina"
+                    placeholder="www.tecsup.com"
+                >
+            </p>
+            <p>
+                <label for="numero_ejemplo">Numero Demo(Obligatorio)</label>
+                <input 
+                    type= "number" 
+                    name ="numeroejemplo"   
+                    id="numeroejemplo"
+                    placeholder="2"
+                    max="14"
+                    min="2"
+                    step="2"
+                    >(Entre 2 y 14 solo pares)
+                
+            </p>
+            <p>
+                <label for="fecha">Fecha (Obligatorio)</label>
+                <input 
+                    type= "date" 
+                    name ="fecha"   
+                    id="fecha"
+                    min="2018-03-31"
+                >(Minimo 31 de marzo 2018)
+            </p>
+            <p>
+                <label for="semana _año">Semana año (Obligatorio)</label>
+                <input 
+                    type= "week" 
+                    name ="week_year"   
+                >
+            </p>
+            <p>
+                <fieldset>
+                    <legend>
+                        Seleciona una opcion :
+                    </legend>
+                    
+                    <p><input type="radio" name="prioridad" value="alta" checked="">Alta</p>
+                    <p><input type="radio" name="prioridad" value="media" >Media</p>
+                    <p><input type="radio" name="prioridad" value="baja" >Baja</p>
+
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>
+                        Seleciona una caja de texto:
+                    </legend>
+                    
+                    <p><input type="checkbox" name="envio" value="urgente" checked="">Urgente</p>
+                    <p><input type="checkbox" name="envio" value="super" >Super Urgente</p>
+                    <p><input type="checkbox" name="envio" value="reembolso" >Reembolso</p>
+                    
+                </fieldset>
+            </p>
+            <p>
+                <label for="pagina">Nomre de Usuraio</label>
+                <input 
+                    type= "text" 
+                    name = "username"   
+                    id= "username"
+                >
+            </p>
+            <p>
+                <label for="pagina">Pagina (Obligatorio)</label>
+                <input 
+                    type= "password" 
+                    name = "pass"   
+                    id= "pass"
+                    placeholder="***********"
+                >
+            </p>
+            <input type="submit" name="Enviar">
+        </form>
+
+    </body>
+</html>
